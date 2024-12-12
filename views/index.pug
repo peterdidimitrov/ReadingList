@@ -38,8 +38,9 @@ block content
     div(class='col-sm-8 fw-bold') Book
     div(class='col-sm-2 fw-bold') Author
     div(class='col-sm-2 fw-bold') Read
+
   each book in completedBooks
     div(class='row mb-3')
-      div(class='col-sm-8') #{book.taskName}
-      div(class='col-sm-2') #{task.author}
-      div(class='col-sm-2') #{task.readDate}
+      div(class='col-sm-8') #{book.bookName}  // Corrected to use book.bookName
+      div(class='col-sm-2') #{book.author}    // Corrected to use book.author
+      div(class='col-sm-2') #{book.readDate}  // Corrected to use book.readDate
